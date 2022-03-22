@@ -1,3 +1,5 @@
+// ignore_for_file: unused_local_variable
+
 import 'package:cari_penginapan/pages/utilities/constant.dart';
 import 'package:flutter/material.dart';
 

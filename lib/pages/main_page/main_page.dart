@@ -1,7 +1,7 @@
-import 'package:cari_penginapan/pages/utilities/constant.dart';
+import 'package:cari_penginapan/pages/pesanan_page.dart';
 import 'package:flutter/material.dart';
-
 import '../home_page.dart';
+import 'package:cari_penginapan/pages/utilities/constant.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);
@@ -30,13 +30,14 @@ class _MainPageState extends State<MainPage> {
         BottomNavigationBarItem(
             icon: Icon(Icons.home_rounded), label: 'Beranda'),
         BottomNavigationBarItem(
-            icon: Icon(Icons.library_books_outlined), label: 'Kegiatan'),
+            icon: Icon(Icons.library_books_outlined), label: 'Pesanan'),
       ],
     );
   }
 
   List<Widget> page = const [
     HomePage(),
+    PesananPage(),
   ];
   @override
   Widget build(BuildContext context) {

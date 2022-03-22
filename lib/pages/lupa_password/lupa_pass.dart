@@ -1,3 +1,5 @@
+// ignore_for_file: override_on_non_overriding_member, annotate_overrides, prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 import '../../component/comp_rich_text.dart';
