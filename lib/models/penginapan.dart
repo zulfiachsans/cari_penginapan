@@ -55,4 +55,27 @@ var penginapanList = [
     numberOfBedrooms: 3,
     numberOfCupBoards: 3,
   ),
+  Penginapan(
+    id: 2,
+    name: 'Emerald Stay',
+    city: 'Bandung',
+    country: 'indonesia',
+    price: 50,
+    imageUrl:
+        'https://images.unsplash.com/photo-1486304873000-235643847519?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80',
+    rating: 5,
+    address: 'Jln. Soekarno Hatta No. 40',
+    phone: '623456213',
+    mapUrl: 'https://goo.gl/maps/5s61rreEq3PVn44u9',
+    photos: [
+    'https://images.unsplash.com/photo-1513694203232-719a280e022f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8cm9vbXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    'https://images.unsplash.com/photo-1463797221720-6b07e6426c24?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTR8fHJvb218ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    'https://images.unsplash.com/photo-1537726235470-8504e3beef77?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTl8fHJvb218ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    'https://images.unsplash.com/flagged/photo-1570737231926-4d67558ff216?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzZ8fHRvaWxldHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60',
+    'https://images.unsplash.com/photo-1598546720078-8659863bc47d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8a2l0Y2hlbnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60'
+    ],
+    numberOfKitchens: 2,
+    numberOfBedrooms: 3,
+    numberOfCupBoards: 3,
+  ),
 ];
