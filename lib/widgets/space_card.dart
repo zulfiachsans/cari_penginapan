@@ -25,55 +25,61 @@ class SpaceCard extends StatelessWidget {
             },
             child: Row(
               children: <Widget>[
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(
-                    18,
+                Padding(
+                  padding: EdgeInsets.only(
+                    top: 10,
+                    left: edge,
                   ),
-                  // ignore: sized_box_for_whitespace
-                  child: Container(
-                    width: 130,
-                    height: 110,
-                    child: Stack(
-                      children: [
-                        Image.network(
-                          space.imageUrl,
-                          width: 130,
-                          height: 110,
-                          fit: BoxFit.cover,
-                        ),
-                        Align(
-                          alignment: Alignment.topRight,
-                          child: Container(
-                            width: 70,
-                            height: 30,
-                            decoration: BoxDecoration(
-                              color: purpleColor,
-                              // ignore: prefer_const_constructors
-                              borderRadius: BorderRadius.only(
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(
+                      18,
+                    ),
+                    // ignore: sized_box_for_whitespace
+                    child: Container(
+                      width: 130,
+                      height: 110,
+                      child: Stack(
+                        children: [
+                          Image.network(
+                            space.imageUrl,
+                            width: 130,
+                            height: 110,
+                            fit: BoxFit.cover,
+                          ),
+                          Align(
+                            alignment: Alignment.topRight,
+                            child: Container(
+                              width: 70,
+                              height: 30,
+                              decoration: BoxDecoration(
+                                color: purpleColor,
                                 // ignore: prefer_const_constructors
-                                bottomLeft: Radius.circular(36),
+                                borderRadius: BorderRadius.only(
+                                  // ignore: prefer_const_constructors
+                                  bottomLeft: Radius.circular(36),
+                                ),
+                              ),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Image.asset(
+                                    'assets/images/icon_star.png',
+                                    width: 22,
+                                    height: 22,
+                                  ),
+                                  Text(
+                                    '${space.rating}/5',
+                                    style: whiteTextStyle.copyWith(
+                                      fontSize: 13,
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Image.asset(
-                                  'assets/images/icon_star.png',
-                                  width: 22,
-                                  height: 22,
-                                ),
-                                Text(
-                                  '${space.rating}/5',
-                                  style: whiteTextStyle.copyWith(
-                                    fontSize: 13,
-                                  ),
-                                ),
-                              ],
-                            ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                 ),
