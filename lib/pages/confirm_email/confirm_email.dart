@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 import '../../component/comp_rich_text.dart';
@@ -42,8 +44,16 @@ class _ConfirmEmailState extends State<ConfirmEmail> {
         width: size.width * .8,
         height: size.height * .0714,
         child: ElevatedButton(
-          onPressed: () {},
-          child: const Text("BUKA EMAIL"),
+          onPressed: () {
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: Text("Anda Membuka Email"),
+              ),
+            );
+          },
+          child: const Text(
+            "BUKA EMAIL",
+          ),
         ),
       ),
     );

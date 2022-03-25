@@ -61,6 +61,11 @@ class _NewPassState extends State<NewPass> {
                             builder: (contex) => Login(),
                           ),
                         );
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            content: Text("Password Berhasil di ubah"),
+                          ),
+                        );
                       },
                       child: const Text("Ubah Password"),
                     ),

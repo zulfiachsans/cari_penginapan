@@ -1,7 +1,8 @@
 import 'package:cari_penginapan/pages/pesanan_page.dart';
-import 'package:flutter/material.dart';
-import '../home_page.dart';
 import 'package:cari_penginapan/pages/utilities/constant.dart';
+import 'package:flutter/material.dart';
+
+import '../home_page.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);
@@ -35,7 +36,7 @@ class _MainPageState extends State<MainPage> {
     );
   }
 
-  List<Widget> page = const [
+  List<Widget> page = [
     HomePage(),
     PesananPage(),
   ];

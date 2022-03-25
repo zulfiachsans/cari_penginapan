@@ -1,3 +1,4 @@
+import 'package:cari_penginapan/component/comp_theme.dart';
 import 'package:cari_penginapan/pages/splash_page.dart';
 import 'package:flutter/material.dart';
 
@@ -14,6 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: SplashPage(),
+      theme: compTheme,
     );
   }
 }
