@@ -40,7 +40,7 @@ class SpaceCard extends StatelessWidget {
                       height: 110,
                       child: Stack(
                         children: [
-                          Image.network(
+                          Image.asset(
                             space.imageUrl,
                             width: 130,
                             height: 110,

@@ -74,7 +74,7 @@ class _DetailScreenState extends State<DetailScreen> {
       body: SafeArea(
         child: Stack(
           children: [
-            Image.network(
+            Image.asset(
               widget.space.imageUrl,
               width: MediaQuery.of(context).size.width,
               height: 350,
@@ -209,7 +209,7 @@ class _DetailScreenState extends State<DetailScreen> {
                               margin: EdgeInsets.only(left: 24),
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(16),
-                                child: Image.network(
+                                child: Image.asset(
                                   item,
                                   width: 110,
                                   height: 88,
