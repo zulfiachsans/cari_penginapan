@@ -1,5 +1,5 @@
-// ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors
-import 'package:cari_penginapan/pages/login.dart';
+// ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors, override_on_non_overriding_member, annotate_overrides, unused_import
+import 'package:cari_penginapan/pages/main_page/main_page.dart';
 import 'package:cari_penginapan/pages/utilities/constant.dart';
 import 'package:flutter/material.dart';
 
@@ -67,7 +67,7 @@ class SplashPage extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => Login(),
+                            builder: (context) => MainPage(),
                           ),
                         );
                       },
