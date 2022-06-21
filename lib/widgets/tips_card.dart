@@ -47,11 +47,12 @@ class TipsCard extends StatelessWidget {
         ),
         Spacer(),
         IconButton(
-            onPressed: () {},
-            icon: Icon(
-              Icons.chevron_right,
-              color: greenColor,
-            )),
+          onPressed: () {},
+          icon: Icon(
+            Icons.chevron_right,
+            color: greenColor,
+          ),
+        ),
       ],
     );
   }
